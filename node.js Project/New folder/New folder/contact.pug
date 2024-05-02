@@ -1,0 +1,62 @@
+extends layout.pug
+block CDN 
+    script(src='https://kit.fontawesome.com/464166b579.js', crossorigin="anonymous")
+    script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+    link(rel="stylesheet", Type="text/css", href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+    link(rel='shortcut icon' href='../static/img/logo.png' type='image/x-icon')
+
+block style
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet' href='../static/css/contact.css')
+
+block content
+  //- <!-- Notifications -->
+
+  div.notifacn#action
+    div#not-text 
+      i.far.fa-check-circle
+      strong Well done!
+      | You successfullyread this important.
+    button#NotBtn 
+      i.fas.fa-times
+
+  // Contact
+
+  section#Contact.Contact-section
+    .contact_information
+      .adress_cont
+        .info_cont
+          i.fas.fa-map-marked-alt
+          h4 Address
+          p Lorem ipsum dolor sit amet
+      .adress_cont
+        .info_cont
+          i.fas.fa-phone
+          h4 0011 234 56789
+          p Mon-Fri 8:30AM-6:30PM
+      .adress_cont
+        .info_cont
+          i.fas.fa-envelope
+          h4 Example@gmail.com
+          p 24/7 online support
+    .main_heading
+      h2 Send Message
+      p.large Our experts have been featured in press numerous times.
+      hr
+    form#form(method='post' action='/contact')
+      div.msg 
+        p.success #{message} 
+        P.err #{error}  
+      .fields
+        label.fields-label(for='name') Name
+        input#name.fields-input(type='text' name='name' required='')
+        label.fields-label(for='email') Email
+        input#email.fields-input(type='text' name='' onkeydown='validetion()')
+        span#text
+        label.fields-label(for='Subject') Subject
+        input#Subject.fields-input(type='text' name='Subject')
+        label.fields-label(for='message') Message
+        textarea#message.fields-input(name='message' rows='6' required='')
+        button.btn-Contact Submit Now
+block scripts
+    script(src='../static/js/contact.js')

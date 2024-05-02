@@ -1,0 +1,212 @@
+extends layout.pug
+
+block CDN 
+    script(src='https://kit.fontawesome.com/464166b579.js', crossorigin="anonymous")
+    script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+    link(rel="stylesheet", href="https://unpkg.com/flickity@2/dist//flickity.min.css")
+    link(rel='shortcut icon' href='../static/img/logo.png' type='image/x-icon')
+
+block style
+    link(rel='stylesheet', href='../static/css/style.css')
+
+block content
+        section.firstSection.background#Home
+            div.firstHalf
+                div.text-big ipsum dolor sit amet elit
+                div.Vector
+                    img(src="../static/img/male.png", alt="")
+                div.text-samll Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima corporis eligenditotam expedita harum beatae asperiores sapiente sint voluptas animi. Quod obcaecati ut, in quidem nisiatque a provident Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                button.btn-main LEARN MORE
+                    i.fas.fa-paper-plane
+        div.container-team
+            div.main_heading
+                h2 Experienced Staff
+                p.large Our experts have been featured in press numerous times.
+                hr
+            div.colum
+                div.team_blog
+                    div.team_feature_head
+                        h4 Dean Michael
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-member-1.jpg", alt="")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook#facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            li 
+                                a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter#twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin#linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram#instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        h4 Ruby Jake
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-member-2.jpg", alt="")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook#facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            li 
+                                a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter#twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin#linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram#instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        h4 David Hussay
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-member-3.jpg", alt="")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook#facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            li 
+                                a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter#twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin#linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram#instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        h4 Dean Michael
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-member-1.jpg", alt="")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook#facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            li 
+                                a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter#twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin#linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram#instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+        div.full
+            div.main_heading
+                h2 Experienced Staff
+                p.large Our experts have been featured in press numerous times.
+                hr
+            ul.brand_list
+                li
+                    img(src="../static/img/1200px-Pidilite_logo.svg.png", alt="#")
+                li
+                    img(src="../static/img/1200px-Kansai_Nerolac_Paints_logo.svg.png", alt="#")
+                li
+                    img(src="../static/img/logo (1).png", alt="#")
+                li
+                    img(src="../static/img/Bosch-logo-700x165.png", alt="#")
+                li 
+                    img(src="../static/img/Bosch-logo-700x165.png",  alt="#")
+
+        section.container#Cards
+            div.main_heading
+                h2 What Clients Say?
+                p.large Here are testimonials from clients..
+                hr
+            div.top
+                div.Cards.main-carousel(data-flickity='{ "wrapAround": true, "freeScroll": true, "autoPlay": true, "prevNextButtons": false }')
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client1.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lana Rhoades is a Virgo born in September of 1996, which explains why her sexual style includes an obvious attention to every detail. Her interracial porn videos
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client2.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lana Rhoades is a Virgo born in September of 1996, which explains why her sexual style includes an obvious attention to every detail. Her interracial porn videos
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+                    
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client3.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lana Rhoades is a Virgo born in September of 1996, which explains why her sexual style includes an obvious attention to every detail. Her interracial porn videos
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client2.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lana Rhoades is a Virgo born in September of 1996, which explains why her sexual style includes an obvious attention to every detail. Her interracial porn videos
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+                    
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client1.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lana Rhoades is a Virgo born in September of 1996, which explains why her sexual style includes an obvious attention to every detail. Her interracial porn videos
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+        //- div.Subscribe
+        //-     div.main_heading
+        //-         h2 Newsletter
+        //-         p.large This Month's Most Popular and Models.
+        //-         hr
+        //-     div.new
+        //-         form.newtetter
+        //-             input.tetter(placeholder="Your email", type="email", name="Your email")
+        //-             button.Subscribe-btn Subscribe
+block scripts

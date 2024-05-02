@@ -1,0 +1,49 @@
+extends layout.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/contact.css')
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+block nav
+    include includes/nav.pug
+block content
+    include includes/notif.pug
+    .main-container
+        form#form.contact-form(method='post' action='/blogpost')
+            .first-container
+                .main_heading
+                    h1 blogPost
+                    p.large Our experts have been featured in press numerous times.
+                    hr
+                ul.login-icons
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-twitter
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-github
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-facebook-square
+                .Create
+                    span back to 
+                    a(href="/")  home
+            .second-container
+                .inputBox 
+                    input#title.fields-input(type='text', name='title', autocomplete='off', required)
+                    label.fields-label(for='title') title
+                .inputBox 
+                    input#content.fields-input(type='text', name='content', autocomplete='off', required)
+                    label.fields-label(for='content') content
+                .inputBox
+                    input#slug.fields-input(type='text', name='slug', autocomplete='off', required)
+                    label.fields-label(for='slug') slug
+                .app-form-group.buttons
+                    button.app-form-button.mgn-lf(type="reset") CANCEL
+                    button.app-form-button SEND
+block foot
+    include includes/foot.pug
+block scripts
+        script(src='../static/js/notif.js')
+        script(src='../static/js/script.js')
+

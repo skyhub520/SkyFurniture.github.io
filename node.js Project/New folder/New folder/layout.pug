@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    script(src="/jq/jquery.js",type="text/javascript")
+    script(src="../static/js/jquery.js",type="text/javascript")
+    block CDN 
+    block style
+    title My Site 
+  body
+    header.C-header.background#I-header
+              div.C-lgo
+                  a(href="/")
+                      img(src="../static/img/logo.png", alt="logo", srcset="")
+              nav.C-nav#I-nav
+                  ul.c-ul#iUl
+                      li
+                          a(href="/") Home
+                      li
+                          a(href="") Services
+                      li
+                          a(href="") Portfolio
+                      li
+                          a(href="/about") About
+                      li
+                          a(href="/contact") Contact
+              div.C-ion#I-ion
+                  ul.culion
+                      li
+                          a(href="")
+                              i.fas.fa-user-circle
+                      li
+                          a(href="")
+                              i.fas.fa-sign-in-alt
+block content
+    // Footer
+footer
+  .inner.background
+    .ftco-footer
+      ul.icons
+        li
+          a.icon(href='#')
+            i.fab.fa-twitter
+        li
+          a.icon(href='#')
+            i.fab.fa-instagram
+        li
+          a.icon(href='#')
+            i.fab.fa-github
+        li
+          a.icon(href='#')
+            i.fab.fa-linkedin-in
+        li
+          a.icon(href='#')
+            i.fab.fa-facebook-square
+      ul.copyright
+        li 
+          p &#x1F44B;
+        li Copyright &copy; 2020 All rights reserved 
+        li
+          i.fas.fa-heart
+          | Design by :
+          a(href='') Sky
+
+block scripts

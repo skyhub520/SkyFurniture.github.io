@@ -1,0 +1,26 @@
+//- <!-- Notifications -->
+
+if (success)
+    div.notifacn.success#action
+        div.success-text#not-text 
+            i.far.fa-check-circle
+            strong success! 
+            | #{success}
+        button#NotBtn
+            i.fas.fa-times
+if (passerr) 
+    div.notifacn.error#action
+        div#not-text 
+            i.far.fa-check-circle
+            strong welcome! 
+            | #{passerr}
+        button#NotBtn
+            i.fas.fa-times
+if (error) 
+    div.notifacn.error#action
+        div.error-text#not-text
+            i.far.fa-check-circle
+            strong error 
+            | #{error}
+        button#NotBtn
+            i.fas.fa-times

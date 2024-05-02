@@ -1,0 +1,26 @@
+extends layout.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+
+block nav
+    include includes/nav.pug
+block content
+
+    //- <!-- Notifications -->
+    include includes/notif.pug
+    form.signUp-form(action="/userImage", method="post", enctype="multipart/form-data")
+        .inputBox 
+            input#image(type='file', name='image', autocomplete='off', required)
+            button.app-form-button SEND
+    each val in Data
+        - var img ='../static/uploads/'
+        - var imgsrc = val.image
+        div.images
+            img(src=img + imgsrc, alt="")
+    else
+        p There are no values
+block scripts
+        script(src='../static/js/notif.js')
+        script(src='../static/js/script.js')

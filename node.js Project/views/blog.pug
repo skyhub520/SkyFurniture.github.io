@@ -1,0 +1,28 @@
+extends layout.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/blog.css')
+block nav
+    include includes/nav.pug
+block content
+    h2.blogH2 This is my blog
+    hr
+    each val in blogdata
+        .blogs-div 
+            .url
+                a(href='/blogPage/' + val.slug)= val.title
+            .blog-content
+                p= val.content
+            .blog-time_date
+                span Time :
+                span= val.time
+                span Date :
+                span=  val.date
+            button.blog-btn
+                a(href='/blogPage/' + val.slug) Read more
+    else
+        p There are no values
+    //- p akash #{title}
+    script(src='../static/js/script.js')
+    

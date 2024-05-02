@@ -1,0 +1,54 @@
+extends layout.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/login.css')
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+block nav
+    include includes/nav.pug
+block content  
+    //- <!-- Notifications -->
+    include includes/notif.pug
+    .main-container
+        form.login-form(action='/login', method="post")
+            .first-container
+                .main_heading
+                    h1 Login
+                    p.large Our experts have been featured in press numerous times.
+                    hr
+                ul.login-icons
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-twitter
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-github
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-facebook-square
+                .Create
+                    a(href="/signUp") Create an account
+                    span  to use for free!
+            .second-container
+                .inputBox
+                    input#name.fields-input(type='text', name='username', autocomplete='off', required)
+                    label.fields-label(for='name') username
+                .inputBox 
+                    input#pwd.fields-input(type='password', name='password', autocomplete='off', required)
+                    .eye#eye 
+                        i.fab.fa-eye
+                    label.fields-label(for='pwd') password  
+                .Remember
+                    input#checkbox(type="checkbox", name="checkbox")
+                    span  Remember me
+                    a.Forgot(href="#", target="_blank", rel="noopener noreferrer") Forgot password
+                .app-form-group.buttons
+                    button.app-form-button.mgn-lf(type="reset") CANCEL
+                    button.app-form-button SEND
+block foot
+    include includes/foot.pug
+block scripts
+        script(src='../static/js/notif.js')
+        script(src='../static/js/script.js')
+
+

@@ -1,0 +1,72 @@
+
+/* <!-- Notifications --> */
+
+.msg {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.success {
+    background-color: #0cad50;
+}
+
+.error {
+    background-color: #cb1111;
+}
+
+.notifacn {
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 15px;
+    position: fixed;
+    height: 50px;
+    transition: 0.5s;
+    border-radius: 5px;
+    /* margin: 5px auto; */
+    width: 100%;
+    animation: notifacn 3s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+}
+
+#not-text {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#not-text strong {
+    text-shadow: 0px 0px 2px rgba(36, 241, 6, 0.46);
+    margin-right: 5px;
+}
+
+#not-text i {
+    margin: 1px 8px;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+#NotBtn {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    font: 1.4em sans-serif;
+    cursor: pointer;
+    color: #155006;
+}
+
+#NotBtn:hover {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes notifacn {
+    0%{
+        top: -50px;
+    }
+    100%{
+        top:30px
+    }
+}

@@ -1,0 +1,27 @@
+extends layout.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+block nav
+    include includes/nav.pug
+block content
+        //- <!-- Notifications -->
+        include includes/notif.pug
+        - var img ='../static/uploads/'
+        - var imgsrc = data.image
+        form.row.g-3.container
+            div.text-center
+                img.rounded(src=img + imgsrc , alt="...", width="200", height="200")
+            div.input-group.mb-3
+                span.input-group-text#basic-addon1= data.username
+                input.form-control(type="text",  placeholder="Username", aria-label="Username" aria-describedby="basic-addon1")
+            div.input-group.mb-3
+                span.input-group-text#basic-addon2= data.email 
+                input.form-control(type="text", placeholder="Recipient's username", aria-label="Recipient's username", aria-describedby="basic-addon2")
+block foot
+    include includes/foot.pug
+block scripts
+        script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+        script(src='../static/js/script.js')
+        script(src='../static/js/notif.js')

@@ -1,0 +1,254 @@
+extends layout.pug
+
+block style
+    link(rel="stylesheet", href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+block nav
+    include includes/nav.pug
+block content
+        //- <!-- Notifications -->
+        include includes/notif.pug
+        section.firstSection.background#header
+            div.firstHalf             
+                div.text-big SkyFurniture 
+                    if(username)
+                    |#{username}
+                div.text-samll Discover the best furniture & drinks in 
+                    span#input-text Lucknow
+                div.Search
+                    div.map-icon
+                        i.fas.fa-map-marker-alt
+                    input.Search-btn#oninput(type="text", placeholder="Lucknow")
+                    div.kRbfbS
+                    div.Search-icon
+                        i.fas.fa-search
+                    input.Search-input(type="text")
+
+        section.container#videos
+            div.main_heading
+                h2.text-c  VIDEOS
+            div.videos-link
+                a(href="#") Beds
+                a(href="#") Sofas
+                a(href="#") Dining Tables
+                a(href="#") Wardrobes
+            div.image_gallery
+                div.images
+                    img(src="../static/img/bads/king-219-white-no-190-mdf-medium-density-fiber-yes-185-original-imagdjxfmcjxhsqt.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+                div.images
+                    img(src="../static/img/bads/king-dark-grey-cotton-no-fur-bed-up-mgns-gry-decornation-grey-original-imagf36hdup7wgrq.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+                div.images
+                    img(src="../static/img/bads/king-na-mango-wood-hop-bed-storage-king-house-of-pataudi-walnut-original-imafz6gatthnvfez.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+                div.images
+                    img(src="../static/img/bads/king-na-particle-board-56101515sd00326-godrej-interio-brown-original-imafvey7cqhp26tp.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+                div.images
+                    img(src="../static/img/bads/queen-brown-particle-board-56101515sd00221-godrej-interio-original-imafkckzad8zxywa.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+                div.images
+                    img(src="../static/img/bads/queen-na-particle-board-yes-kosmo-mayflower-queen-bed-box-original-imag4qfzhtkh9r7s.webp", alt="", width="320", height="200")
+                    div.text-box
+                        p.Box-text.main-Box 
+                            a(href="#") Lorem ipsum dolor sit
+        div.container-team#Portfolio    
+            div.main_heading
+                h2 Experienced Staff
+                p.large Our experts have been featured in press numerous times.
+                hr
+            div.colum
+                div.team_blog
+                    div.team_feature_head
+                        p Dean Michael
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-1.jpg", alt="", width="300", height="300")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            //- li 
+                            //-     a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        p Ruby Jake
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-2.jpg", alt="", width="300", height="300")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            //- li 
+                            //-     a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        p David Hussay
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-3.jpg", alt="", width="300", height="300")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            //- li 
+                            //-     a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+                div.team_blog
+                    div.team_feature_head
+                        p Dean Michael
+                    div.it_team_img
+                        img.img-responsive(src="../static/img/team-4.jpg", alt="", width="300", height="300")
+                    div.social_icon
+                        ul.list-inline
+                            li 
+                                a.fa.fa-facebook(href="https://www.facebook.com/", title="Facebook", target="_blank")
+                            //- li 
+                            //-     a.fa.fa-google-plus#google(href="https://plus.google.com/", title="Google+", target="_blank")
+                            li 
+                                a.fa.fa-twitter(href="https://www.twitter.com/", title="-twitter", target="_blank")
+                            li 
+                                a.fa.fa-linkedin(href="https://www.linkedin.com/", title="linkedin", target="_blank")
+                            li 
+                                a.fa.fa-instagram(href="https://www.instagram.com/", title="instagram", target="_blank")
+        div.full
+            div.main_heading
+                h2 BRAND PARTNERS
+                p.large Our experts have been featured in press numerous times.
+                hr
+            ul.brand_list
+                li
+                    img(src="../static/img/1200px-Pidilite_logo.svg.png", alt="#")
+                li
+                    img(src="../static/img/1200px-Kansai_Nerolac_Paints_logo.svg.png", alt="#")
+                li
+                    img(src="../static/img/logo (1).png", alt="#")
+                li
+                    img(src="../static/img/Bosch-logo-700x165.png", alt="#")
+                li 
+                    img(src="../static/img/Bosch-logo-700x165.png",  alt="#")
+
+        section.container#About
+            div.main_heading
+                h2 What Clients Say?
+                p.large Here are testimonials from clients..
+                hr
+            div.top
+                div.Cards.main-carousel(data-flickity='{ "wrapAround": true, "freeScroll": true, "autoPlay": true, "prevNextButtons": false }')
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client1.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quos, iusto tempora perspiciatis culpa, non alias, tempore sapiente earum quas esse illum ex deserunt quam temporibus cupiditate officiis quia eaque.
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client2.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quos, iusto tempora perspiciatis culpa, non alias, tempore sapiente earum quas esse illum ex deserunt quam temporibus cupiditate officiis quia eaque.
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+                    
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client3.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quos, iusto tempora perspiciatis culpa, non alias, tempore sapiente earum quas esse illum ex deserunt quam temporibus cupiditate officiis quia eaque.
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client2.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quos, iusto tempora perspiciatis culpa, non alias, tempore sapiente earum quas esse illum ex deserunt quam temporibus cupiditate officiis quia eaque.
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+                    
+                    div.Card-img.carousel-cell
+                        div.name
+                            img(src="../static/img/client1.png", alt="")
+                            div.rev
+                                p.Box-text Lana Rhoades 1
+                                p.rev-date Reviewed on 4 August 2019
+                        p.link-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quos, iusto tempora perspiciatis culpa, non alias, tempore sapiente earum quas esse illum ex deserunt quam temporibus cupiditate officiis quia eaque.
+                        div.star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.far.fa-star
+                        div.like
+                            i.far.fa-thumbs-up
+                            i.far.fa-thumbs-down
+block foot
+    include includes/foot.pug
+block scripts
+        script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+        script(src='../static/js/script.js')
+        script(src='../static/js/notif.js')

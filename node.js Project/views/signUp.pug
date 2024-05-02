@@ -1,0 +1,59 @@
+extends layout.pug
+block style
+    link(rel='stylesheet',href='../static/css/signUp.css')
+    link(rel='stylesheet', href='../static/css/style.css')
+    link(rel='stylesheet', href='../static/css/notifications.css')
+
+block content
+    include includes/notif.pug
+    .main-container
+        form.signUp-form(method="post", action="/signUp", enctype="multipart/form-data")
+            .first-container
+                .main_heading
+                    h1 SignUp
+                    p.large Our experts have been featured in press numerous times.
+                    hr
+                ul.login-icons
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-twitter
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-github
+                    li
+                        a.icon(href='#')
+                            i.fab.fa-facebook-square
+                .Create
+                    span Already have an account?
+                    a(href="/login")  Log in
+            .second-container
+                .inputBox
+                    input#email.fields-input(type='email', name='email', autocomplete='off', required)
+                    label.fields-label(for='email') Email
+                .inputBox
+                    input#name.fields-input(type='text', name='username', autocomplete='off', required)
+                    label.fields-label(for='name') username
+                .inputBox 
+                    input#password.fields-input(type='password', name='password', autocomplete='off', required)
+                    label.fields-label(for='password') password  
+                .inputBox 
+                    input#comfirm.fields-input(type='password', name='comfirm', autocomplete='off', required)
+                    label.fields-label(for='comfirm') comfirm
+                .inputBox 
+                    //- input#comfirm.fields-input(type='password', name='comfirm', autocomplete='off', required)
+                    input#image(type='file', name='image', autocomplete='off', required)
+
+                .Remember
+                    input#checkbo(type="checkbox", name="checkbox")
+                    span  I agree to the 
+                    a(href="#", target="_blank") User Agreement 
+                    | and 
+                    a(href="#", target="_blank")  Privacy Policy.
+                .app-form-group.buttons
+                    button.app-form-button.mgn-lf(type="reset") CANCEL
+                    button.app-form-button SEND
+//- block foot
+//-     include includes/foot.pug
+block scripts
+        script(src='../static/js/notif.js')
+        script(src='../static/js/script.js')

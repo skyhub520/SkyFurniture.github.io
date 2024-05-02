@@ -1,0 +1,37 @@
+//- Navbar
+
+header.C-header.background
+    div.C-lgo
+        a(href="/")
+            img(src="../static/img/logo.png", alt="logo")
+    nav.C-nav#I-nav
+        ul.c-ul#iUl
+            li
+                a(href= '/') Home
+            li
+                a(href="#Portfolio") Portfolio
+            li
+                a(href= '/About') About
+            li
+                a(href= '/blog') blog
+            li
+                a(href='/blogpost') blogpost
+            li
+                a(href="/contact") Contact
+    div.C-ion#I-ion
+        ul.culion
+            - var img ='../static/uploads/'
+            - var imgsrc = imageData
+            - var use = '/userData/'
+            if username
+                li
+                    a(href= use + username)
+                        img(src=img + imgsrc, alt="")
+                li
+                    a(href="/logout")
+                        i.fas.fa-sign-in-alt 
+            else
+                li
+                    a(href="/login")
+                        i.fas.fa-user-plus
+            
