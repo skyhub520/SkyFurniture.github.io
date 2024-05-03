@@ -1,1 +1,0 @@
-https://cricket-api.vercel.app/cri.php?url=<https://www.google.com/search?q=icc&oq=&aqs=chrome.0.69i59i450l8.134781368j0j7&sourceid=chrome&ie=UTF-8#sie=m;/g/11nygz1c2s;5;/m/021q23;dt;fp;1;;>
